@@ -40,12 +40,7 @@ metadata {
 				]
 			)
 		}
-		standardTile("up", "device.temperature", inactiveLabel: false, decoration: "flat") {
-			state "default", label:'up', action:"up"
-		}        
-		standardTile("down", "device.temperature", inactiveLabel: false, decoration: "flat") {
-			state "default", label:'down', action:"down"
-		}
+
         main "temperature"
 		details("temperature","up","down")
 	}
@@ -58,18 +53,6 @@ def parse(String description) {
 }
 
 def setLevel(value) {
-	sendEvent(name:"temperature", value: value)
-}
-
-def up() {
-	def ts = device.currentState("temperature")
-	def value = ts ? ts.integerValue + 1 : 72 
-	sendEvent(name:"temperature", value: value)
-}
-
-def down() {
-	def ts = device.currentState("temperature")
-	def value = ts ? ts.integerValue - 1 : 72 
 	sendEvent(name:"temperature", value: value)
 }
 
