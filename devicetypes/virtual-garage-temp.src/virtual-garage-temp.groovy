@@ -14,7 +14,7 @@
  */
 metadata {
 	// Automatically generated. Make future change here.
-	definition (name: "Virtual Garage Temp", namespace: "bkalps", author: "bkalps") {
+	definition (name: "Virtual Garage Temp", namespace: "bkalps", author: "SmartThings") {
 		capability "Temperature Measurement"
 		capability "Switch Level"
 		capability "Sensor"
