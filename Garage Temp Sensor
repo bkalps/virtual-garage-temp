@@ -14,7 +14,7 @@
  */
 metadata {
 	// Automatically generated. Make future change here.
-	definition (name: "Garage Temp Sensor", namespace: "bkalps/virtualGarageTemp", author: "bkalps") {
+	definition (name: "Virtual Garage Temp", namespace: "bkalps", author: "bkalps") {
 		capability "Temperature Measurement"
 		capability "Switch Level"
 		capability "Sensor"
